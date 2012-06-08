@@ -1,7 +1,7 @@
 brickhu.github.com
 ==================
 
-** My own page **
+*My own page*
 - assdfdsfsdfsfgdfgdfgfdg
 - sdfsdgsdgsdgdsgdfsgsdg
 
