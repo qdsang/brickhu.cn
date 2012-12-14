@@ -5,6 +5,7 @@ function regExpMatch(url, pattern) {
 function FindProxyForURL(url, host) {
 	if (shExpMatch(url, '*facebook*/*')) return 'SOCKS5 127.0.0.1:9090';
 	if (shExpMatch(url, '*fb.com*/*')) return 'SOCKS5 127.0.0.1:9090';
+	if (shExpMatch(url, '*hulu.com*/*')) return 'SOCKS5 127.0.0.1:9090';
 	if (shExpMatch(url, '*redtube.com*/*')) return 'SOCKS5 127.0.0.1:9090';
 	if (shExpMatch(url, '*s-static.ak.fbcdn.net*/*')) return 'SOCKS5 127.0.0.1:9090';
 	if (shExpMatch(url, '*google*/*')) return 'SOCKS5 127.0.0.1:9090';
