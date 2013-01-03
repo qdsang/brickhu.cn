@@ -1,8 +1,20 @@
 ---
-layout: document
+layout: doc
 title: helloworld
 permalink: hello/
 ---
 <h2>{{ page.title }}</h2>
-<p>我的第一篇文章</p>
+<p>The search engine DuckDuckGo recently added the ability for developers to develop instant answer plugins for their search engine. This project is called DuckDuckHack.</p>
+
+<p>Instant answers on DuckDuckGo are really nice, in that they highlight a specific result in a context sensitive way. For example, Stack Overflow questions that match will show up with the highest rated answer at the top of the page, and Wikipedia articles will be presented as a title an abstract.</p>
+
+<p>I decided to play with DuckDuckHack and added a plugin for XMPP Extension Proposal (XEP) lookups. I do XEP lookups often when I'm answering people's XMPP-related questions, and this plugin makes the XEPs title and abstract appear as an instant answer. The plugin was recently merged into the tree, and it is now live on DuckDuckGo itself.</p>
+
+<p>Try it by searching for XEP 45. View the code on GitHub.</p>
 <p>{{ page.date | date_to_string }}</p>
+
+<style type="text/css">
+	body{
+		color: green;
+	}
+</style>

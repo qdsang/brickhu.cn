@@ -1,0 +1,33 @@
+---
+layout: default
+type: slide
+---
+<div class="reveal">
+	<div class="slides">
+		{{ content }}
+	</div>
+</div>
+<script src="https://raw.github.com/brickhu/reveal.js/master/lib/js/head.min.js"></script>
+<script src="https://raw.github.com/brickhu/reveal.js/master/js/reveal.min.js"></script>
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'https://raw.github.com/brickhu/reveal.js/master/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>

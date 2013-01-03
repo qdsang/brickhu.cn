@@ -6,13 +6,15 @@
   font-weight: normal;
   font-style: normal;
 }
-body{
+html{
+	font-size: 20px;
 	line-height: 1.5em;
+}
+body{
 	color: #222;
-	font-family: "PT Serif",Georgia,Times,"Times New Roman",serif;
+	font-family: helvetica, arial, sans-serif;
 	font-size: 100%;
 	vertical-align: baseline;
-	font: inherit;
 }
 
 .heading, h1, h1, h2, h3, h4, h5, h6 {
@@ -23,4 +25,8 @@ body{
 	background: #ccc;
 	color: #fff;
 	text-shadow: none;
+}
+.index{
+	width: 30em;
+	margin: 0 auto;	
 }

@@ -1,4 +1,6 @@
 .inner_doc{
-	width: 800px;
+	width: 30em;
 	margin: 0 auto;	
+	text-align: justify;
+	line-height: 1.5em;
 }
