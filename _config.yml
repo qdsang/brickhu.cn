@@ -3,3 +3,7 @@ description: A Design Thinker who focuses on the architecture , communication an
 auto: true
 permalink: /:categories/:year/:month/:title/
 markdown: rdiscount
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore
