@@ -1,6 +1,7 @@
 ---
 layout: default
 title: My first blog on Github
+categories: blog
 ---
 ## {{ page.title }}
 
