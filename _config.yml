@@ -1,2 +1,5 @@
-baseurl: 
-permalink: /:categories/:year/:month/:day/:title.html
+name: Brickhu.cn
+description: A Design Thinker who focuses on the architecture , communication and quality of information.
+auto: true
+permalink: /:categories/:year/:month/:title/
+markdown: rdiscount
