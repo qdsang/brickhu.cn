@@ -1,6 +1,6 @@
 name: Brickhu.cn
 description: A Design Thinker who focuses on the architecture , communication and quality of information.
-auto: true
+auto: 
 permalink: /:year/:month/:title
 markdown: rdiscount
 exclude:

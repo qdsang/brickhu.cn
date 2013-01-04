@@ -2,6 +2,12 @@
 layout: doc
 title: helloworld
 permalink: hello/
+style: |
+      <style type="text/css">
+      	body{
+      		background: red;
+      	}
+      </style>
 ---
 <h2>{{ page.title }}</h2>
 <p>The search engine DuckDuckGo recently added the ability for developers to develop instant answer plugins for their search engine. This project is called DuckDuckHack.</p>
@@ -11,9 +17,3 @@ permalink: hello/
 <p>I decided to play with DuckDuckHack and added a plugin for XMPP Extension Proposal (XEP) lookups. I do XEP lookups often when I'm answering people's XMPP-related questions, and this plugin makes the XEPs title and abstract appear as an instant answer. The plugin was recently merged into the tree, and it is now live on DuckDuckGo itself.</p>
 
 <p>Try it by searching for XEP 45. View the code on GitHub.</p>
-
-<style type="text/css">
-	body{
-		color: green;
-	}
-</style>

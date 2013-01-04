@@ -13,6 +13,15 @@
 		{% if page.type == 'doc'%}
 			<link type="text/css" rel="stylesheet" href="/css/doc.css" />
 		{% endif %}
+		{% if page.css %}
+			<link type="text/css" rel="stylesheet" href="{{ page.css }}" />
+		{% endif %}
+		{% if page.js %}
+			<script src="{{ page.js }}"></script>
+		{% endif %}
+		{% if page.style %}
+			{{ page.style }}
+		{% endif %}
 	</head>
 	<body class="{{ page.slug }} {{ page.category }}" id="{{page.url | remove:'/' | prepend:"id-" | remove:'.html'}}">
 		{{ content }}

@@ -54,6 +54,12 @@ body {
 body {
 	position: relative;
 	line-height: 1;
+	background: -moz-radial-gradient(center, circle cover, #fff 0%, #ccc 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ccc), color-stop(100%, #ccc));
+	background: -webkit-radial-gradient(center, circle cover, #fff 0%, #ccc 100%);
+	background: -o-radial-gradient(center, circle cover, #fff 0%, #ccc 100%);
+	background: -ms-radial-gradient(center, circle cover, #fff 0%, #ccc 100%);
+	background: radial-gradient(center, circle cover, #fff 0%, #ccc 100%);
 }
 
 
