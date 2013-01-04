@@ -2,8 +2,9 @@
 layout: default
 type: doc
 ---
-<div class="doc">
+<div class="doc {% if page.paper %}{{ page.paper }}{% else %}default{% endif %}">
 	<article class="inner_doc">
 		{{ content }}
+		<p>{{ page.date | date_to_string }}</p>
 	</article>
 </div>

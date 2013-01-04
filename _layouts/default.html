@@ -14,7 +14,7 @@
 			<link type="text/css" rel="stylesheet" href="/css/doc.css" />
 		{% endif %}
 	</head>
-	<body>
+	<body class="{{ page.slug }} {{ page.category }}" id="{{page.url | remove:'/' | prepend:"id-" | remove:'.html'}}">
 		{{ content }}
 	</body>
 </html>
