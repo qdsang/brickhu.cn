@@ -1,8 +1,10 @@
-name: Brickhu.cn
+safe: true
+name: Brickhu
 description: A Design Thinker who focuses on the architecture , communication and quality of information.
 auto: 
 permalink: /:year/:month/:title
 markdown: rdiscount
+source: .
 exclude:
   - Rakefile
   - Gemfile

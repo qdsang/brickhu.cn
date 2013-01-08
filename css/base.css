@@ -1,32 +1,107 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-@font-face {
-  font-family: 'League Gothic';
-  src: url("../../lib/font/league_gothic-webfont.eot");
-  src: url("../../lib/font/league_gothic-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/league_gothic-webfont.woff") format("woff"), url("../../lib/font/league_gothic-webfont.ttf") format("truetype"), url("../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+html,body{
+	font-size: 100%;
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	vertical-align: baseline;
+	width: 100%;
+	height: 100%;
 }
 html{
-	font-size: 20px;
-	line-height: 1.5em;
+	overflow-x: hidden;
 }
 body{
 	color: #222;
-	font-family: helvetica, arial, sans-serif;
-	font-size: 100%;
-	vertical-align: baseline;
+	font-family: 'PT Sans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	background: #ccc;
 }
 
 .heading, h1, h1, h2, h3, h4, h5, h6 {
-	font-family: "Lato","Georgia","Helvetica Neue",Arial,sans-serif;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
-
 ::selection {
 	background: #ccc;
 	color: #fff;
 	text-shadow: none;
 }
-.index{
-	width: 30em;
-	margin: 0 auto;	
+/* The Magnificent Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+.sidebar{
+	width: 250px;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	-moz-box-shadow: 2px 0px 1px rgba(0,0,0,.10);
+	-webkit-box-shadow: 2px 0px 1px rgba(0, 0, 0, .10);
+	box-shadow: 2px 0px 10px rgba(0, 0, 0, .10);
+}
+.btn-sidebar{
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 5;
+}
+.sidebar .inner{
+	padding: 25px;
+}
+h1.site-name{
+	text-transform: uppercase;
+}
+.description{
+	line-height: 1em;
+}
+.nav,.nav li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.nav {
+	border-top: solid 1px #eee;
+	padding-top: 2em;
+}
+.nav li{
+	font-size: 1.1em;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+.nav li a{
+	color: #333;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
+    transition:all 0.2s ease;
+    text-decoration: none;
+    display: block;
+}
+.nav li a:hover {
+    font-size: 1.5em;
+    color: #ff0000;
+    padding-left:5px;
+    border-left:solid 2px #ff0000;
+}
+.info{
+	color: #999;
+	border-top: solid 1px #eee;
+	position: absolute;
+	bottom: 20px;
+	width: 200px;
+}
+
+/**** container *****/
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: auto;
 }

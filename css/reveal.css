@@ -1202,15 +1202,6 @@ body {
 	     -o-transition: background 800ms ease;
 	        transition: background 800ms ease;
 }
-.alert .reveal .state-background {
-	background: rgba( 200, 50, 30, 0.6 );
-}
-.soothe .reveal .state-background {
-	background: rgba( 50, 200, 90, 0.4 );
-}
-.blackout .reveal .state-background {
-	background: rgba( 0, 0, 0, 0.6 );
-}
 
 
 /*********************************************
