@@ -5,7 +5,7 @@ layout: default
 <ul class="grid-list index">
 	{% for post in site.tags['recommend'] %}
 	<li class="item">
-		<img src="{{ post.thumb }}">
+		<a href="{{ post.url}}"><img src="{{ post.thumb }}"></a>
 	</li>
 	{% endfor %}
 </ul>
