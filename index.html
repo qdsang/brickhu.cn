@@ -2,12 +2,10 @@
 title: Home
 layout: default
 ---
-<div class="index">
-	<h2>{{ page.title }}</h2>
-	<p>最新文章</p>
-	<ul>
-	　　{% for post in site.posts %}
-	　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	　　{% endfor %}
-	</ul>
-</div>
+<ul class="grid-list index">
+	{% for post in site.tags['recommend'] %}
+	<li class="item">
+		<img src="{{ post.thumb }}">
+	</li>
+	{% endfor %}
+</ul>

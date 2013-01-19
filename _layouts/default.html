@@ -5,7 +5,7 @@
 		<title>{{ page.title }}</title>
 		<meta name="description" content="{{ site.description }}" />
 		<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
-
+		<script type="text/javascript" src="/js/jquery.isotope.min.js"></script>
 		<link type="text/css" rel="stylesheet" href="/css/base.css" />
 		{% if page.type == 'slide'%}
 		<link type="text/css" rel="stylesheet" href="/css/reveal.css" />
@@ -25,7 +25,7 @@
 
 </head>
 <body class="{{ page.slug }} {{ page.category }}" id="{{page.url | remove:'/' | prepend:"id-" | remove:'.html'}}">
-	<div class="btn-sidebar">显示/隐藏</div>
+	<div class="btn-sidebar"></div>
 	{% include header.html%}
 	<div class="container">
 		{{ content }}
