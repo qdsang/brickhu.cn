@@ -1,3 +1,4 @@
+<a href="#" id="logo">logo</a>
 <header class="sidebar" {% if page.nav == 'hide' %} style="display:none"{% else %}style="display:block"{% endif %}>
 	<div class="inner">
 		<h1 class="site-name">{{ site.name }}</h1>
@@ -14,9 +15,15 @@
 			<li><a href="#">links</a></li>
 		</ul>
 		<div class="info">
-			<p class="copy-right">
+			<div class="social">
+				<a href="#"><span aria-hidden="true" class="icon-facebook"></span></a>
+				<a href="#"><span aria-hidden="true" class="icon-github"></span></a>
+				<a href="#"><span aria-hidden="true" class="icon-twitter"></span></a>
+				<a href="#"><span aria-hidden="true" class="icon-instagram"></span></a>
+			</div>
+			<div class="copy-right">
 				&copy;&nbsp;Brickhu.cn 2013
-			</p>
+			</div>
 		</div>
 	</div>
 </header>
