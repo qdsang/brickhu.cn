@@ -38,3 +38,4 @@ $itemNum = parseInt($('.grid-list').width()/$item.width());
 alert($itemNum)
 });
 
+
