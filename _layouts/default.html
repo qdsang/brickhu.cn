@@ -24,7 +24,7 @@
 		{% endif %}
 
 </head>
-<body class="{{ page.slug }} {{ page.category }}" id="{{page.url | remove:'/' | prepend:"id-" | remove:'.html'}}">
+<body class="{{ page.slug }} {{ page.category }} {{ page.type }}" id="{{page.url | remove:'/' | prepend:"id-" | remove:'.html'}}">
 	{% include header.html%}
 	<div class="container">
 		{{ content }}
