@@ -1,3 +1,5 @@
+
+
 // 侧边栏控制及窗口尺寸设置
 var bar = $(".sidebar"),
 body = $("body"),
@@ -28,14 +30,33 @@ body.width($(window).width()-parseInt(body.css("margin-left")));
 });
 
 // 网格排版
-var $item = $('.item'),
-$gridList = $('.grid-list'),
-$itemNum = parseInt($gridList.width()/$item.width());
-
-$item.css({"width":$gridList.width()/$itemNum+"px","height":$gridList.width()/$itemNum+"px"})
-$(".container").resize(function(){
-$itemNum = parseInt($('.grid-list').width()/$item.width());
-alert($itemNum)
+var $container = $('.grid-list'),
+	$item = $container.find('.item')
+function makeGird(i) {
+	var $boxWidth = parseInt($container.width() / i);
+	$item.width($boxWidth);
+	$item.height($boxWidth*0.96);
+	$item.find('a').width($boxWidth-1)
+	$item.find('a').height($boxWidth*0.96-1)
+	$container.isotope({
+	  masonry: { 
+	  	columnWidth: $boxWidth, 
+	  	isFitWidth: true
+	  },
+	  animationEngine : 'jquery'
+	});
+}
+function dispalyGrid() {
+	var $baseGridWidth = 300,
+	$gridNum = parseInt($container.width()/$baseGridWidth);
+	makeGird($gridNum);
+};
+dispalyGrid();
+$(window).smartresize(function(){
+	dispalyGrid();
 });
 
-
+//封面大小控制
+skrollr.init({
+			forceHeight: false
+		});

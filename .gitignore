@@ -2,4 +2,7 @@ drafts/
 _site/
 .DS_Store
 *.swp
+test*.html
 test.html
+test2.html
+test3.html
