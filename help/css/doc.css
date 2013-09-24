@@ -1,0 +1,23 @@
+
+.doc{
+	background: #fff;
+}
+
+.inner_doc,.related,.comments{
+	width: 40em;
+	margin: 0 auto;	
+	line-height: 1.5em;
+}
+.inner_doc img{
+	width: 100%;
+}
+.meta{
+	color: #999;
+}
+
+/*********************************************
+ * Paper Style
+ *********************************************/
+.doc .default{
+
+}
