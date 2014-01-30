@@ -1,0 +1,38 @@
+
+#go{
+	width:700px;
+	background-color:#FOO;
+	color:#000;
+	margin:0px auto;	
+	}
+#to{
+	
+	}
+#to h2{
+	font-size:36px;
+	color:#000;
+	text-align:center;
+	height:60px;
+	line-height:60px;
+	}
+#to p{
+	font-size:20px;
+	color:#000;
+	}
+.logo{
+	width:300px
+	}
+.mune{
+	list-style:none;
+	font-size:20px;
+	}
+#left,#right{
+	width:150px;
+	position: fixed;
+	}
+#left{
+	left:0;
+	}
+#right{
+	right:0;
+	}

@@ -1,0 +1,64 @@
+body{
+	margin:0;
+	font-family:"FrutigerNext","Helvetica Neue",Arial,Helvetica,sans-serif;
+	}
+#intro{
+	background-color:#000;
+	color:#fff;
+	}
+#intro_inner{
+	width:350px;
+	margin:0px auto;
+	padding:80px 350px 80px 0px;
+	background-image:url(girls.jpg);
+	background-repeat:no-repeat;
+	background-position:right;
+	}
+#intro_inner h2{
+	font-size:28px;
+	}
+#intro_inner p{
+	font-size:18px;
+	color:#CCC;
+	}
+#header{
+	margin:0px auto;
+	width:700px;
+	padding:20px 0;
+	}
+.menu{
+	float:right;
+	list-style:none;
+	font-size:20px;
+	}
+.menu li{
+	float:left;
+	margin: 10px 0 0 50px;
+	}
+.menu a{
+	color:#666;
+	text-decoration:none;
+}
+.menu a:hover{
+	text-decoration:underline;
+	color:#C00;
+	}
+#logo{
+	width:150px;
+	}
+#ipad a{
+	color:#000;
+	font-weight:bold;
+	}
+#download{
+	width:236px;
+	height:96px;
+	margin:200px;
+	background-image:url(btn_download.png);
+	border:0;
+	background-color:transparent;
+	text-indent:-900px;
+	}
+#download:hover{
+	background-position:0 -96px 0 0;
+	}
