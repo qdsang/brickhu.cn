@@ -1,0 +1,49 @@
+$userColor: #ADD1CA;
+$grayColor: #9b9b9b;
+
+.cover{
+	background-color:$userColor;
+	color:$userColor;
+}
+.cover img{
+	width:100%;
+}
+.intro{
+	margin:2em 20% 3em 20%;
+	text-align: center;
+}
+.intro h1{
+	font-family: STFangsong;
+}
+.bigRoundBtn{
+	background-color:$userColor;
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	width:128px;
+	font-size:18px;
+	color:white;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-top:1em;
+	font-weight: bold;
+}
+.bigRoundBtn:hover{
+	color:white;
+	text-decoration: none;
+}
+.date{
+	color:$grayColor;
+}
+.intro p{
+	margin:0;
+	padding:0;
+}
+.location,.location a{
+	color:$grayColor;
+	font-weight: bold;
+}
+.location a:hover{
+	color:$userColor;
+}
