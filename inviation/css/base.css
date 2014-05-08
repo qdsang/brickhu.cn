@@ -2,7 +2,7 @@
   background-color: #add1ca;
   color: #add1ca; }
 
-.cover img {
+.cover, .cover img, .cover .mask {
   width: 100%; }
 
 .intro {
@@ -86,14 +86,29 @@
 
 /*--actionBar--*/
 .actionBar {
+  height: 3.2em; }
+
+.actionBar .inner {
   border-top: 1px solid #efefef;
   background: white;
   height: 3.2em;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 0 1em; }
+  padding: 0 1em;
+  line-height: 3.2em; }
 
 .inputTips {
-  color: #9b9b9b;
-  line-height: 3.2em; }
+  color: #ddd;
+  font-size: 18px; }
+
+.actionBar .btnMore {
+  position: absolute;
+  right: 0;
+  padding: 0 1em 0 0; }
+
+.actionBar .btnMore .icon {
+  border-left: solid 1px #eee;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 0 0 1em; }

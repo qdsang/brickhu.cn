@@ -5,7 +5,7 @@ $grayColor: #9b9b9b;
 	background-color:$userColor;
 	color:$userColor;
 }
-.cover img{
+.cover,.cover img,.cover .mask{
 	width:100%;
 }
 .intro{
@@ -91,16 +91,34 @@ $grayColor: #9b9b9b;
 }
 
 /*--actionBar--*/
+$barHeight: 3.2em;
+
 .actionBar{
+	height:3.2em;
+}
+.actionBar .inner{
 	border-top: 1px solid #efefef;
 	background:white;
-	height:3.2em;
+	height:$barHeight;
 	position: fixed;
 	bottom:0;
 	width:100%;
 	padding:0 1em;
+	line-height:$barHeight;
 }
 .inputTips{
-	color:$grayColor;
-	line-height:3.2em;
+	color:#ddd;
+	font-size:18px;
+
+}
+.actionBar .btnMore{
+	position: absolute;
+	right:0;
+	padding:0 1em 0 0;
+}
+.actionBar .btnMore .icon{
+	border-left: solid 1px #eee;
+	height:18px;
+	line-height:18px;
+	padding:0 0 0 1em;
 }
