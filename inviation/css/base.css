@@ -30,7 +30,7 @@
   color: white;
   text-decoration: none; }
 
-.date {
+.date, .mata {
   color: #9b9b9b; }
 
 .intro p {
@@ -43,3 +43,57 @@
 
 .location a:hover {
   color: #add1ca; }
+
+/*--timeline--*/
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0.5em 0 2em 0; }
+
+.timeline li {
+  padding: 1.5em 1.5em 0.5em 5em;
+  position: relative; }
+
+.timeline .userHead {
+  position: absolute;
+  left: 1.5em; }
+
+.timeline .userHead img {
+  width: 2.4em;
+  -webkit-border-radius: 1.2em;
+  -moz-border-radius: 1.2em;
+  border-radius: 1.2em; }
+
+.timeline .postContent p {
+  margin: 0;
+  padding: 0; }
+
+.timeline .singlePicture {
+  padding: 0.5em 0; }
+
+.timeline .singlePicture img {
+  max-width: 10em;
+  max-height: 10em; }
+
+.timeline .muitiPictures {
+  padding: 0.5em 0 0 0; }
+
+.timeline .muitiPictures a {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  overflow: hidden; }
+
+/*--actionBar--*/
+.actionBar {
+  border-top: 1px solid #efefef;
+  background: white;
+  height: 3.2em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1em; }
+
+.inputTips {
+  color: #9b9b9b;
+  line-height: 3.2em; }
