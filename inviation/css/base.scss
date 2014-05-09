@@ -1,12 +1,30 @@
 $userColor: #ADD1CA;
 $grayColor: #9b9b9b;
+$blurSize: 5px;
 
 .cover{
 	background-color:$userColor;
 	color:$userColor;
+	position: relative;
+	overflow: hidden;
 }
 .cover,.cover img,.cover .mask{
 	width:100%;
+}
+.cover .mask{
+	height:100%;
+	background-color:rgba(0,0,0,0.2);
+	position: absolute;
+	text-align: center;
+	z-index:2;
+}
+.cover .mask .inner{
+	margin: 20% 10% 10% 10%;
+	text-shadow:rgba(0,0,0,0.6) 0 0 5px;
+	color:white;
+}
+.cover .mask h1{
+	font-size:24px;
 }
 .intro{
 	margin:2em 20% 3em 20%;
@@ -89,8 +107,20 @@ $grayColor: #9b9b9b;
 	height:5em;
 	overflow:hidden;
 }
+.timeline .mata .icons{
+	font-size:0.8em;
+}
+.timeline .actionsForPost a{
+	position: absolute;
+	right:1em;
+	display:inline-block;
+	padding:0 0.5em;
+	color:$grayColor;
+
+}
 
 /*--actionBar--*/
+
 $barHeight: 3.2em;
 
 .actionBar{
@@ -116,9 +146,35 @@ $barHeight: 3.2em;
 	right:0;
 	padding:0 1em 0 0;
 }
-.actionBar .btnMore .icon{
+.actionBar .btnMore .icons{
 	border-left: solid 1px #eee;
 	height:18px;
 	line-height:18px;
 	padding:0 0 0 1em;
+	font-size:1.2em;
+	color:$grayColor;
+}
+
+
+
+/*--base Components--*/
+
+.icons {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'invitation';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blur {    
+    -webkit-filter: blur($blurSize); 
+       -moz-filter: blur($blurSize);
+        -ms-filter: blur($blurSize);    
+            filter: blur($blurSize);    
 }
