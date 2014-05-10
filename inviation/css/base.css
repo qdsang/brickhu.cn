@@ -23,25 +23,27 @@
   font-size: 24px; }
 
 .intro {
-  margin: 2em 20% 3em 20%;
-  text-align: center; }
+  margin: 2em 10% 3em 10%;
+  text-align: left; }
 
 .intro h1 {
-  font-family: STFangsong; }
+  font-family: SFJ_Ximingt43810 'Open Sans Condensed', sans-serif;
+  padding-bottom: 0.2em; }
 
 .bigRoundBtn {
   background-color: #add1ca;
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  width: 128px;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
   margin-top: 1em;
-  font-weight: bold; }
+  font-weight: bold;
+  text-algin: center;
+  padding: 0 1.5em; }
 
 .bigRoundBtn:hover {
   color: white;
@@ -50,16 +52,31 @@
 .date, .mata {
   color: #9b9b9b; }
 
-.intro p {
+.eventMata {
+  position: relative; }
+
+.eventMata p {
   margin: 0;
   padding: 0; }
 
-.location, .location a {
-  color: #9b9b9b;
-  font-weight: bold; }
+.eventMata, .eventMata a {
+  color: #9b9b9b; }
 
-.location a:hover {
-  color: #add1ca; }
+.eventMata a:hover {
+  color: #add1ca;
+  text-decoration: none; }
+
+.eventMata .btnMore {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1.5em;
+  padding-left: 0.5em; }
+
+.eventDesc {
+  margin-top: 1em; }
 
 /*--timeline--*/
 .timeline {
