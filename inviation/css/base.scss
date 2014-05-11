@@ -1,6 +1,8 @@
 $userColor: #ADD1CA;
 $grayColor: #9b9b9b;
-$blurSize: 5px;
+$blurSize: 0px;
+$titleFont:adobeFangSong;
+$picThumbSize:5em;
 
 .cover{
 	background-color:$userColor;
@@ -13,25 +15,35 @@ $blurSize: 5px;
 }
 .cover .mask{
 	height:100%;
-	background-color:rgba(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.3);
 	position: absolute;
-	text-align: center;
+	text-align: left;
 	z-index:2;
 }
+.cover .mask:hover{
+	text-decoration: none;
+	background-color:rgba(0,0,0,0.5);
+}
 .cover .mask .inner{
-	margin: 20% 10% 10% 10%;
+	margin:0 3em 2em 2em; 
 	text-shadow:rgba(0,0,0,0.6) 0 0 5px;
 	color:white;
+	position: relative;
 }
 .cover .mask h1{
-	font-size:24px;
+	font-size:2em;
+	font-family:$titleFont;
+}
+.cover .mask .icon-threedots{
+	float:right;
+	margin:0 -1.5em -0.5em 0;
 }
 .intro{
 	margin:2em 10% 3em 10%;
 	text-align: left;
 }
 .intro h1{
-	font-family:SFJ_Ximingt43810 'Open Sans Condensed', sans-serif;
+	font-family:$titleFont;
 	padding-bottom:0.2em;
 }
 .bigRoundBtn{
@@ -46,8 +58,8 @@ $blurSize: 5px;
 	border-radius: 20px;
 	margin-top:1em;
 	font-weight: bold;
-	text-algin:center;
-	padding:0 1.5em;
+	text-align: center;
+	padding:0 2em;
 }
 .bigRoundBtn:hover{
 	color:white;
@@ -75,7 +87,7 @@ $blurSize: 5px;
 	position: absolute;
 	right:0;
 	bottom:0;
-	width:1em;
+	width:1.5em;
 	height:1.5em;
 	padding-left:0.5em;
 }
@@ -83,7 +95,25 @@ $blurSize: 5px;
 	margin-top:1em;
 }
 
-/*--timeline--*/
+.replyPanel{
+	background-color:white;
+	border-top: 1px solid #efefef;
+	padding-bottom:0.5em;
+}
+.replyPanel h2{
+	font-size:1em;
+	color:$grayColor;
+	text-align:center;
+	font-weight:normal;
+}
+.replyPanel .btn-group-vertical{
+	padding:0.5em 1em;
+} 
+.replyPanel .btn-group-lg .btn{
+	font-size:1.2em;
+}
+
+/*-------------------timeline-----------------*/
 
 .timeline{
 	list-style:none;
@@ -120,8 +150,8 @@ $blurSize: 5px;
 }
 .timeline .muitiPictures a{
 	display:inline-block;
-	width:5em;
-	height:5em;
+	width:$picThumbSize;
+	height:$picThumbSize;
 	overflow:hidden;
 }
 .timeline .mata .icons{
@@ -141,7 +171,7 @@ $blurSize: 5px;
 $barHeight: 3.2em;
 
 .actionBar{
-	height:3.2em;
+	height:$barHeight;
 }
 .actionBar .inner{
 	border-top: 1px solid #efefef;
@@ -172,7 +202,55 @@ $barHeight: 3.2em;
 	color:$grayColor;
 }
 
+/*--post Panel--*/
+.postPanel .inner{
+	position:fixed;
+	height:100%;
+	background:#fff;
+	z-index:3;
+	top:0;
+	width:320px;
+}
+.postPanel .title{
+	text-align: center;
+	height:4em;
+}
+.postPanel .title h4{
+	margin:0;
+	line-height:3em;
+}
+.postPanel .textarea{
+	width:100%;
+	border-top: 1px solid #efefef;
+}
+.postPanel .textarea input{
+	border:none;
+	padding:0.5em 1em;
+	width:100%;
+}
 
+.postPanel .btn-post,.postPanel .btn-cancel{
+	position: absolute;
+	top:1em;
+}
+.postPanel .btn-post{
+	right:1em;
+}
+.postPanel .btn-cancel{
+	left:1em;
+}
+.postPanel .picSelect{
+	padding:1em;
+}
+.postPanel .picSelect .btnAdd{
+	width:$picThumbSize;
+	height:$picThumbSize;
+	display:inline-block;
+	color:$grayColor;
+	border:solid 1px #eee;
+	text-align: center;
+	line-height:$picThumbSize;
+}
 
 /*--base Components--*/
 
@@ -194,4 +272,42 @@ $barHeight: 3.2em;
        -moz-filter: blur($blurSize);
         -ms-filter: blur($blurSize);    
             filter: blur($blurSize);    
+}
+.centerBox{
+	 display: -webkit-box;
+  	-webkit-box-orient: horizontal;
+  	-webkit-box-pack: center;
+  	-webkit-box-align: center;
+ 
+  	display: -moz-box;
+  	-moz-box-orient: horizontal;
+  	-moz-box-pack: center;
+  	-moz-box-align: center;
+  
+ 	display: box;
+  	box-orient: horizontal;
+  	box-pack: center;
+  	box-align: center;
+}
+.bottomBox{
+	 display: -webkit-box;
+  	-webkit-box-orient: horizontal;
+  	-webkit-box-pack: end;
+  	-webkit-box-align: end;
+ 
+  	display: -moz-box;
+  	-moz-box-orient: horizontal;
+  	-moz-box-pack: end;
+  	-moz-box-align: end;
+  
+ 	display: box;
+  	box-orient: horizontal;
+  	box-pack: end;
+  	box-align: end;
+}
+
+@font-face {
+	font-family: adobeFangSong;
+	src: url('soureFile/AdobeFangsongStd-Regular_0.otf');
+	font-weight:normal;
 }
