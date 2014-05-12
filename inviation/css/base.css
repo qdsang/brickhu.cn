@@ -26,7 +26,8 @@
 
 .cover .mask h1 {
   font-size: 2em;
-  font-family: adobeFangSong; }
+  font-family: LiSong Pro;
+  font-weight: normal; }
 
 .cover .mask .icon-threedots {
   float: right;
@@ -37,8 +38,9 @@
   text-align: left; }
 
 .intro h1 {
-  font-family: adobeFangSong;
-  padding-bottom: 0.2em; }
+  font-family: LiSong Pro;
+  padding-bottom: 0.2em;
+  font-weight: normal; }
 
 .bigRoundBtn {
   background-color: #add1ca;
@@ -87,6 +89,25 @@
 
 .eventDesc {
   margin-top: 1em; }
+
+.eventReply {
+  border-top: 1px solid #efefef;
+  margin-top: 1.5em; }
+
+.eventReply h2 {
+  font-size: 1em;
+  color: #9b9b9b;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  line-height: 3em; }
+
+.eventReply .btn-default {
+  background-color: #add1ca;
+  color: #fff;
+  border: none;
+  margin-right: 0.5em;
+  padding: 0.5em 1.2em; }
 
 .replyPanel {
   background-color: white;
@@ -281,6 +302,5 @@
   box-align: end; }
 
 @font-face {
-  font-family: adobeFangSong;
-  src: url("soureFile/AdobeFangsongStd-Regular_0.otf");
-  font-weight: normal; }
+  font-family: 'MingLiU';
+  src: url("http://www.fontsaddict.com/fontface/mingliu.TTF"); }

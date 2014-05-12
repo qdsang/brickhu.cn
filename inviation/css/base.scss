@@ -1,8 +1,9 @@
 $userColor: #ADD1CA;
 $grayColor: #9b9b9b;
 $blurSize: 0px;
-$titleFont:adobeFangSong;
+$titleFont:LiSong Pro;
 $picThumbSize:5em;
+$borderColor:#efefef;
 
 .cover{
 	background-color:$userColor;
@@ -33,6 +34,7 @@ $picThumbSize:5em;
 .cover .mask h1{
 	font-size:2em;
 	font-family:$titleFont;
+	font-weight:normal;
 }
 .cover .mask .icon-threedots{
 	float:right;
@@ -45,6 +47,7 @@ $picThumbSize:5em;
 .intro h1{
 	font-family:$titleFont;
 	padding-bottom:0.2em;
+	font-weight:normal;
 }
 .bigRoundBtn{
 	background-color:$userColor;
@@ -95,9 +98,29 @@ $picThumbSize:5em;
 	margin-top:1em;
 }
 
+.eventReply{
+	border-top: 1px solid $borderColor;
+	margin-top:1.5em;
+}
+.eventReply h2{
+	font-size:1em;
+	color:$grayColor;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	line-height:3em;
+}
+.eventReply .btn-default{
+	background-color:$userColor;
+	color:#fff;
+	border:none;
+	margin-right:0.5em;
+	padding:0.5em 1.2em;
+}
+
 .replyPanel{
 	background-color:white;
-	border-top: 1px solid #efefef;
+	border-top: 1px solid $borderColor;
 	padding-bottom:0.5em;
 }
 .replyPanel h2{
@@ -307,7 +330,6 @@ $barHeight: 3.2em;
 }
 
 @font-face {
-	font-family: adobeFangSong;
-	src: url('soureFile/AdobeFangsongStd-Regular_0.otf');
-	font-weight:normal;
+  font-family: 'MingLiU';
+  src: url('http://www.fontsaddict.com/fontface/mingliu.TTF');
 }
