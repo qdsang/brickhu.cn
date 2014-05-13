@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="http://i.icomoon.io/public/temp/452e8e61bf/invitation/style.css">
     <link href='http://www.youziku.com/webfont/CSS/62e498c2caa270f614e6de80783cfe5a' rel='stylesheet' type='text/css'/>
   </head>
-  <body>
+  <body class="HanWangMingThin-Gb5">
     <div class="container">
       <div class="row show-grid">
         <div class="col-md-16 cover">
@@ -49,5 +49,33 @@
         </div>
     </div>
     </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
+    <script type="text/javascript"> 
+        function youziku46295() {
+            var resultStr = $(".HanWangMingThin-Gb5").text();
+            var md5 = "";
+            resultStr = Trim(resultStr);
+            resultStr = SelectWord(resultStr);
+            md5 = $.md5("5ff4a1c80f524483ae49257f9d444ac5"+"HanWangMingThin-Gb5" + resultStr);
+            $.getJSON("http://www.youziku.com/webfont/CSSPOST?jsoncallback=?", { "id": md5, "guid": "5ff4a1c80f524483ae49257f9d444ac5", "type": "5" }, function (json) {
+                if (json.result == 0) {//alert("需要生成");
+                    $.post("http://www.youziku.com/webfont/PostCorsCreateFont", { "name": "HanWangMingThin-Gb5", "gid": "5ff4a1c80f524483ae49257f9d444ac5", "type": "5", "text": resultStr }, function (json) {
+                        if (json == "0") { //alert("参数不对");//传递的参数不对，请检查name,guid,type是否正确
+                        } else if (json == "2") {//alert("超过每日生成字体数的上限");
+                        } else if (json == "3") { //alert("当前正在生成请稍后");
+                        } else {//alert("正在生成");//第一次调用需要生成webfont文件，文件生成一般只需几秒，安全起见请您在30s后刷新页面
+                        }
+                    });
+                }
+                else {//alert("下载css文件");
+                    loadExtentFile("http://www.youziku.com/webfont/css?id=" + md5 + "&guid=" + "5ff4a1c80f524483ae49257f9d444ac5" + "&type=5");
+                }
+            });
+        }
+        (function youziku() {
+            youziku46295();
+        })()
+    </script>
   </body>
 </html>
